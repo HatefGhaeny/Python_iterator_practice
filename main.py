@@ -12,14 +12,12 @@ class MyRange:
         current = self.value
         self.value += 1
         return current
-
-
-def my_range(start):
-    current = True
-    while True:
-        yield current
-        current += 1
-
+    
 nums = MyRange(1, 10)
 print(next(nums))
-print(next(nums))
+
+#def my_range(start):
+#   current = True
+#    while True:
+#        yield current
+#        current += 1
